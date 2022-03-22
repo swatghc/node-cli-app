@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "start": "node build/app.js",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "lint:check": "eslint \"src/**/*.ts\""
   },
