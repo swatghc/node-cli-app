@@ -9,7 +9,7 @@ export class CliCommandHandler {
     console.log(command);
     const reportFactory = new ReportGeneratorFactory();
     const generator = reportFactory.getReportGenerator(command.reportType);
-    console.log(generator);
+    generator.generateReport(command.studentId);
   }
 
   private validateCommand(command: CliCommand): void {

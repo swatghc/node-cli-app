@@ -1,3 +1,3 @@
 export abstract class ReportGenerator {
-  public abstract generateReport(): string
+  public abstract generateReport(studentId: string): string
 }

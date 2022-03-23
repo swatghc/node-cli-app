@@ -8,7 +8,8 @@
     "outDir": "./build",
     "importHelpers": false,
     // "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
   },
 }
 // {
