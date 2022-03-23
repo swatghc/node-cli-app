@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-import { isArray } from 'util';
 import yargsInteractive, { Option } from 'yargs-interactive';
 import { CliCommandHandler } from './cli-command-handler';
 import { errorHandler } from './error-handler';
-import { CliCommand } from './types/interface';
+import { CliCommand } from './models/interface';
 
 const options: Option = {
   interactive: { default: true },

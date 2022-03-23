@@ -1,8 +1,7 @@
-import { ReportType } from "./types/enum";
-import { CliCommand } from "./types/interface";
+import { ReportType } from "./models/enum";
+import { CliCommand } from "./models/interface";
 
 export class CliCommandHandler {
-  constructor() {}
 
   public handle(command: CliCommand) {
     this.validateCommand(command);
