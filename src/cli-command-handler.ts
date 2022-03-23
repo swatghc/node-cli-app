@@ -1,11 +1,15 @@
 import { ReportType } from "./models/enum";
 import { CliCommand } from "./models/interface";
+import { ReportGeneratorFactory } from "./report-generators/report-generator-factory";
 
 export class CliCommandHandler {
 
   public handle(command: CliCommand) {
     this.validateCommand(command);
     console.log(command);
+    const reportFactory = new ReportGeneratorFactory();
+    const generator = reportFactory.getReportGenerator(command.reportType);
+    console.log(generator);
   }
 
   private validateCommand(command: CliCommand): void {
